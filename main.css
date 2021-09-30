@@ -12,7 +12,7 @@
     align-items: center;
 }
 .container .container-box{
-    height: 70%;
+    height: auto;
     width: 50%;
     border: 1px solid black;
     background-color: blanchedalmond;
@@ -26,9 +26,41 @@
     display: flex;
     text-align: center;
 }
+.container .container-box #d_flex textarea{
+    width: 100%;
+    height: 80%;
+    padding: 15px;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.container .container-box #d_flex input[type="color"]{
+    width: 8%;
+    float: left;
+    margin-right: 10px;
+}
+.container .container-box #d_flex input[type="text"]{
+    padding: 5px 10px;
+    float: left;
+    width: 40%;
+}
+.container .container-box #d_flex button{
+    padding: 5px 15px;
+    background-color: rgb(18, 131, 18);
+    color: white;
+    float: right;
+    font-size: 17px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
 .container .container-box .main{
-    padding: 10px;
-    border: 1px solid black;
+    padding: 15px;
+    /* border: 1px solid black; */
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-collapse: collapse;
     width: 50%;
-    height: 100%;
+    height: auto;
 }
