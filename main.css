@@ -42,6 +42,9 @@
     padding: 5px 10px;
     float: left;
     width: 40%;
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid black;
 }
 .container .container-box #d_flex button{
     padding: 5px 15px;
@@ -55,6 +58,12 @@
     border: none;
     cursor: pointer;
 }
+.container .container-box #d_flex #errorMsg{
+    display: block;
+    color: red;
+    font-size: 15px;
+    font-weight: 700;
+}
 .container .container-box .main{
     padding: 15px;
     /* border: 1px solid black; */
@@ -63,4 +72,10 @@
     border-collapse: collapse;
     width: 50%;
     height: auto;
+}
+.container .container-box #noteList{
+    list-style-type: upper-alpha;
+    text-align: left;
+    list-style-position: initial;
+    list-style: square;
 }
