@@ -19,15 +19,25 @@ function saveNote(){
         // target the unordered list to add child list elements in it
         let ul = document.getElementById('noteList')
         let li = document.createElement('li')
-        console.log("else block 1")
+       
         li.textContent = note
-        console.log(li.textContent)
         li.style.color = color
         li.style.fontSize = size+"px";
+
+        let a = document.createElement('a')
+        a.href = "javacript:void(0)"
+        a.textContent = "X"
+        li.appendChild(a)
         ul.appendChild(li)
-        console.log("else block 2")
+
         document.getElementById('fontSize').value="";
         document.getElementById('notes').value="";
     }
    }
+   let btn=document.querySelector('a');
+   btn.addEventListener('click',function(e){
+    // let ul = document.getElementById('noteList');
+    let li=e.target.parentNode;
+    li.remove();
+   });
 }

@@ -12,10 +12,10 @@
     align-items: center;
 }
 .container .container-box{
-    height: auto;
-    width: 50%;
+    height: 70%;
+    width: 60%;
     border: 1px solid black;
-    background-color: blanchedalmond;
+    background-color: rgb(228, 225, 220);
 }
 .container .container-box h1{
     text-align: center;
@@ -25,13 +25,14 @@
 .container .container-box #d_flex{
     display: flex;
     text-align: center;
+    height: 91%;
 }
 .container .container-box #d_flex textarea{
     width: 100%;
     height: 80%;
     padding: 15px;
     font-size: 17px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .container .container-box #d_flex input[type="color"]{
     width: 8%;
@@ -74,8 +75,24 @@
     height: auto;
 }
 .container .container-box #noteList{
-    list-style-type: upper-alpha;
+    list-style-type: none;
+    height: 100%;
+    padding: 5px 10px;
+    overflow-y: scroll;
+}
+.container .container-box #noteList li{
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
     text-align: left;
-    list-style-position: initial;
-    list-style: square;
+    position: relative;
+}
+.container .container-box #noteList li a{
+    font-size: 12px;
+    text-decoration: none;
+    float: right;
+    color: red;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
